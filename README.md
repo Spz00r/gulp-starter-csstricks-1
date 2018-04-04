@@ -25,18 +25,18 @@ $ cd /path/to/your/dev/folder
 ### clone repository
 
 ```bash
-$ git clone ssh://git@bitbucket.org/420cloud/mobile-app-www.git
+$ git clone ssh://git@LINK-TO-GIT/NAME-GIT.git
 ```
 
 You may also clone this using https:
 
 ```bash
-$ git clone https://<your_bitbucket_account>@bitbucket.org/420cloud/mobile-app-www.git
+$ git clone https://<your_bitbucket_account>@bitbucket.org/LINK-TO-GIT/NAME-GIT.git
 ```
 
-# switch directory to the mobile-app-www
+# switch directory to the new
 ```bash
-$ cd mobile-app-www/
+$ cd NEW-DIRECTORY/
 ```
 
 ### switch branch to develop
