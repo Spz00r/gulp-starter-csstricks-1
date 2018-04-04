@@ -15,11 +15,30 @@ Prerequisites
 
 Install
 -------
-### open terminal (for Windows users gitBash)
-### change directory to your dev folder
- 
+1. Install nodejs. https://nodejs.org/en/
+2. Check npm (node package manager) is installed via command prompt:
 ```bash
-$ cd /path/to/your/dev/folder
+$ npm
+```
+3. Install gulp:
+```bash
+$ npm install gulp --global
+```
+4. In relevant project folder, create 'gulpfile.js':
+```bash
+    // build flow that copies MyNiceProgram.exe to another
+    // directory (with forced folder creation and overwrite)
+    
+    var gulp = require('gulp');
+    var exefile = 'some/bin/path/MyNiceProgram.exe';
+    
+    gulp.task('build', function(){
+        gulp.src(exefile).pipe(gulp.dest('../../Binaries/'));
+    });
+    
+    gulp.task('default', ['build'], function(){
+        gulp.watch(exefile, ['build']);
+    });
 ```
 
 ### clone repository
@@ -56,7 +75,7 @@ $ npm install
 $ bower install
 ```
 
-### build and start app
+### Run Gulp:
 
 ```bash
 $ gulp
