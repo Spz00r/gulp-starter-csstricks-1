@@ -59,7 +59,7 @@ $ bower install
 ### build and start app
 
 ```bash
-$ gulp serve
+$ gulp
 ```
 
 This will start local server on http://localhost:3000/ with file watcher and all required tools to handle *.scss changes/build
