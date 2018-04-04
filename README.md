@@ -20,12 +20,19 @@ Install
 ```bash
 $ npm
 ```
-3. Install gulp:
+3. Global install gulp on computer:
 ```bash
 $ npm install gulp --global
 ```
-4. In relevant project folder, create 'gulpfile.js' with content:
-
+4. Copying 'gulpfile.js' and 'package.json' into folder with project
+5. Initialize project:
+```bash
+$ npm init
+```
+6. Installing Gulp locally into project folder:
+```bash
+$ npm install gulp --save-dev
+```
 ### clone repository
 
 ```bash
